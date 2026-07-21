@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../services/language/language.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './footer.html',
 })
 export class Footer {
-  currentYear = new Date().getFullYear();
+  protected readonly langService = inject(LanguageService);
+  protected readonly currentYear = new Date().getFullYear();
 }

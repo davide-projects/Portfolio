@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../services/language/language.service';
 
 @Component({
   selector: 'app-hero',
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './hero.html',
 })
 export class Hero {
-  nome: string = "Davide";
-  ruolo: string = "Junior Full Stack Developer"
+  protected readonly langService = inject(LanguageService);
+  protected readonly nome = "Davide";
 }

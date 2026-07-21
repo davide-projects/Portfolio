@@ -1,5 +1,6 @@
 <div align="center">
-# 🚀 PortfolioAngular
+
+### 📘 Portfolio
  
 ### Portfolio personale realizzato con Angular, Tailwind CSS e DaisyUI
  
@@ -30,7 +31,7 @@
  
 ## ✨ Descrizione
  
-Portfolio personale con **tema scuro personalizzato**, palette coerente e design moderno, costruito su uno stack Angular 21 + Tailwind CSS v4 + DaisyUI v5.
+Portfolio personale con **tema chiaro/scuro**, **supporto multilingua (IT/EN)**, palette coerente e design moderno, costruito su uno stack Angular 21 + Tailwind CSS v4 + DaisyUI v5.
  
 ## 📋 Contenuti
  
@@ -38,14 +39,17 @@ Portfolio personale con **tema scuro personalizzato**, palette coerente e design
 |---|---|
 | 🎯 **Hero** | Presentazione con nome e ruolo |
 | 🛠️ **Skill Cards** | Competenze Frontend, Backend e Framework con hover animati |
+| 🌐 **Language Switcher** | Toggle italiano/inglese con bandiere |
+| 🌓 **Theme Toggle** | Passaggio tema chiaro/scuro con animazione fluida |
 | 📄 **Footer** | Credits dinamici con anno corrente |
  
 ## 🧰 Stack Tecnologico
  
-- ⚡ **Angular 21**
-- 🎨 **Tailwind CSS v4**
-- 🌼 **DaisyUI v5**
-- 🧪 **Vitest**
+- ⚡ **Angular 21** — framework lato client
+- 🎨 **Tailwind CSS v4** — utility-first CSS
+- 🌼 **DaisyUI v5** — component library
+- 🌐 **i18n custom** — servizio lingue con signal (IT/EN)
+- 🧪 **Vitest** — test runner
 ## ✅ Prerequisiti
  
 Prima di iniziare, assicurati di avere installato:
@@ -99,14 +103,20 @@ ng test
  
 ```
 PortfolioAngular/
+├── public/
+│   └── flags/                # bandiere per il language switcher
 ├── src/
 │   ├── app/
 │   │   ├── components/
+│   │   │   ├── header/       # navbar sticky + theme toggle + lingue
 │   │   │   ├── hero/
 │   │   │   ├── skills/
 │   │   │   └── footer/
+│   │   ├── services/
+│   │   │   └── language/     # LanguageService + dizionario IT/EN
 │   │   └── ...
-│   └── styles/
+│   ├── styles.css            # temi DaisyUI custom + transition
+│   └── index.html
 ├── dist/
 ├── angular.json
 ├── package.json

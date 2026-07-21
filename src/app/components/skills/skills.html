@@ -1,9 +1,9 @@
 <section class="py-16 px-4">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">Competenze</h2>
+    <h2 class="text-3xl font-bold text-center mb-10">{{ langService.t()['skills.title'] }}</h2>
 
     <div class="mb-12">
-      <h3 class="text-2xl font-semibold mb-6">Frontend</h3>
+      <h3 class="text-2xl font-semibold mb-6">{{ langService.t()['skills.frontend'] }}</h3>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         @for (skill of frontendSkills; track $index) {
@@ -15,7 +15,7 @@
     </div>
 
     <div class="mb-12">
-      <h3 class="text-2xl font-semibold mb-6">Backend</h3>
+      <h3 class="text-2xl font-semibold mb-6">{{ langService.t()['skills.backend'] }}</h3>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         @for (skill of backendSkills; track $index) {
@@ -27,7 +27,7 @@
     </div>
 
     <div>
-      <h3 class="text-2xl font-semibold mb-6">Frameworks</h3>
+      <h3 class="text-2xl font-semibold mb-6">{{ langService.t()['skills.frameworks'] }}</h3>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         @for (skill of frameworkSkills; track $index) {

@@ -1,6 +1,7 @@
-import { Component, Inject, PLATFORM_ID, signal, Renderer2 } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, inject, signal, Renderer2 } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { LanguageService } from '../../services/language/language.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,7 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
   templateUrl: './header.html',
 })
 export class Header {
+  protected readonly langService = inject(LanguageService);
   isDark = signal(true);
 
   constructor(
@@ -27,7 +29,6 @@ export class Header {
     this.isDark.update(v => !v);
     const theme = this.isDark() ? 'portfolio' : 'portfolio-light';
 
-    // ✔️ NESSUN WARNING SONARCUBE
     this._renderer.setAttribute(
       this._document.documentElement,
       'data-theme',
