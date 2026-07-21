@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 export class Skills {
   frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Angular'];
   backendSkills = ['PHP', 'Java', 'C#', 'Python'];
-  frameworkSkills = ['Laravel', 'Spring', '.NET', 'Angular'];
-    
+  frameworkSkills = ['Laravel', 'Spring Boot', '.NET', 'Angular'];
 }
