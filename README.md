@@ -1,59 +1,124 @@
-# PortfolioAngular
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
-
-## Development server
-
-To start a local development server, run:
-
+<div align="center">
+# 🚀 PortfolioAngular
+ 
+### Portfolio personale realizzato con Angular, Tailwind CSS e DaisyUI
+ 
+[![Angular](https://img.shields.io/badge/Angular-21-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![DaisyUI](https://img.shields.io/badge/DaisyUI-v5-1AD1A5?style=for-the-badge&logo=daisyui&logoColor=white)](https://daisyui.com)
+[![Vitest](https://img.shields.io/badge/Vitest-tested-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev)
+ 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/made%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](#-contributing)
+ 
+</div>
+---
+ 
+## 📖 Indice
+ 
+- [✨ Descrizione](#-descrizione)
+- [📋 Contenuti](#-contenuti)
+- [🧰 Stack Tecnologico](#-stack-tecnologico)
+- [✅ Prerequisiti](#-prerequisiti)
+- [⚙️ Installazione](#️-installazione)
+- [🚀 Sviluppo](#-sviluppo)
+- [📦 Build](#-build)
+- [🧪 Test](#-test)
+- [📁 Struttura del progetto](#-struttura-del-progetto)
+- [🤝 Contributing](#-contributing)
+- [📄 Licenza](#-licenza)
+---
+ 
+## ✨ Descrizione
+ 
+Portfolio personale con **tema scuro personalizzato**, palette coerente e design moderno, costruito su uno stack Angular 21 + Tailwind CSS v4 + DaisyUI v5.
+ 
+## 📋 Contenuti
+ 
+| Sezione | Descrizione |
+|---|---|
+| 🎯 **Hero** | Presentazione con nome e ruolo |
+| 🛠️ **Skill Cards** | Competenze Frontend, Backend e Framework con hover animati |
+| 📄 **Footer** | Credits dinamici con anno corrente |
+ 
+## 🧰 Stack Tecnologico
+ 
+- ⚡ **Angular 21**
+- 🎨 **Tailwind CSS v4**
+- 🌼 **DaisyUI v5**
+- 🧪 **Vitest**
+## ✅ Prerequisiti
+ 
+Prima di iniziare, assicurati di avere installato:
+ 
+- **Node.js** `>= 20.x`
+- **npm** `>= 10.x` (oppure `pnpm` / `yarn`)
+- **Angular CLI** `>= 21.x`
+```bash
+npm install -g @angular/cli
+```
+ 
+## ⚙️ Installazione
+ 
+Clona il repository e installa le dipendenze:
+ 
+```bash
+git clone https://github.com/<tuo-username>/PortfolioAngular.git
+cd PortfolioAngular
+npm install
+```
+ 
+## 🚀 Sviluppo
+ 
+Avvia il server di sviluppo locale:
+ 
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
+ 
+L'applicazione sarà disponibile su [`http://localhost:4200/`](http://localhost:4200/). L'app si ricarica automaticamente ad ogni modifica ai file sorgente.
+ 
+## 📦 Build
+ 
+Compila il progetto per la produzione:
+ 
 ```bash
 ng build
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
+ 
+Gli artefatti di build vengono salvati nella cartella `dist/`.
+ 
+## 🧪 Test
+ 
+Esegui i test unitari con **Vitest**:
+ 
 ```bash
 ng test
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+ 
+## 📁 Struttura del progetto
+ 
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+PortfolioAngular/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── hero/
+│   │   │   ├── skills/
+│   │   │   └── footer/
+│   │   └── ...
+│   └── styles/
+├── dist/
+├── angular.json
+├── package.json
+└── README.md
+```
+ 
+ 
+<div align="center">
+Realizzato con **Angular**
+ 
+⭐️ Se questo progetto ti piace, lascia una **stella** su GitHub!
+ 
+</div>
