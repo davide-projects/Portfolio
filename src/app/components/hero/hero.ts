@@ -7,6 +7,6 @@ import { LanguageService } from '../../services/language/language.service';
   templateUrl: './hero.html',
 })
 export class Hero {
-  protected readonly langService = inject(LanguageService);
-  protected readonly nome = "Davide";
+  readonly langService = inject(LanguageService);
+  readonly nome = "Davide";
 }

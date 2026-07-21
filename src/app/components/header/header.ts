@@ -9,7 +9,7 @@ import { LanguageService } from '../../services/language/language.service';
   templateUrl: './header.html',
 })
 export class Header {
-  protected readonly langService = inject(LanguageService);
+  readonly langService = inject(LanguageService);
   isDark = signal(true);
 
   constructor(

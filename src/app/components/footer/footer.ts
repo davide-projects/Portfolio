@@ -7,6 +7,6 @@ import { LanguageService } from '../../services/language/language.service';
   templateUrl: './footer.html',
 })
 export class Footer {
-  protected readonly langService = inject(LanguageService);
-  protected readonly currentYear = new Date().getFullYear();
+  readonly langService = inject(LanguageService);
+  readonly currentYear = new Date().getFullYear();
 }

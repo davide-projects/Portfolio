@@ -7,8 +7,8 @@ import { LanguageService } from '../../services/language/language.service';
   templateUrl: './skills.html',
 })
 export class Skills {
-  protected readonly langService = inject(LanguageService);
-  frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Angular'];
+  readonly langService = inject(LanguageService);
+  frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Tailwind', 'DaisyUi'];
   backendSkills = ['PHP', 'Java', 'C#', 'Python'];
   frameworkSkills = ['Laravel', 'Spring Boot', '.NET', 'Angular'];
 }
