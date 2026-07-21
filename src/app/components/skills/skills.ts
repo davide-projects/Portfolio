@@ -8,7 +8,7 @@ import { LanguageService } from '../../services/language/language.service';
 })
 export class Skills {
   readonly langService = inject(LanguageService);
-  frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Tailwind', 'DaisyUi'];
-  backendSkills = ['PHP', 'Java', 'C#', 'Python'];
-  frameworkSkills = ['Laravel', 'Spring Boot', '.NET', 'Angular'];
+  frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Tailwind', 'DaisyUi', 'Bootstrap'];
+  backendSkills = ['Java', 'C#', 'PHP', 'Python'];
+  frameworkSkills = ['Spring Boot', '.NET', 'Laravel', 'Angular'];
 }
