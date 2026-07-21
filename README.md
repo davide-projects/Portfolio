@@ -10,7 +10,6 @@
  
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/made%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](#-contributing)
  
 </div>
 ---
@@ -26,7 +25,6 @@
 - [📦 Build](#-build)
 - [🧪 Test](#-test)
 - [📁 Struttura del progetto](#-struttura-del-progetto)
-- [🤝 Contributing](#-contributing)
 - [📄 Licenza](#-licenza)
 ---
  
