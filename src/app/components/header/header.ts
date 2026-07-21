@@ -1,4 +1,4 @@
-import { Component, Inject, PLATFORM_ID, inject, signal, Renderer2 } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, inject, signal } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { LanguageService } from '../../services/language/language.service';
@@ -15,7 +15,6 @@ export class Header {
   constructor(
     @Inject(DOCUMENT) private readonly _document: Document,
     @Inject(PLATFORM_ID) private readonly _platformId: object,
-    private readonly _renderer: Renderer2
   ) {
     if (isPlatformBrowser(this._platformId)) {
       const saved = localStorage.getItem('theme');
@@ -28,12 +27,7 @@ export class Header {
   toggleTheme() {
     this.isDark.update(v => !v);
     const theme = this.isDark() ? 'portfolio' : 'portfolio-light';
-
-    this._renderer.setAttribute(
-      this._document.documentElement,
-      'data-theme',
-      theme
-    );
+    this._document.documentElement.dataset['theme'] = theme;
 
     if (isPlatformBrowser(this._platformId)) {
       localStorage.setItem('theme', theme);
